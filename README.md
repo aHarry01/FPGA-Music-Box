@@ -1,5 +1,5 @@
 # FPGA Music Box
-A simple music box written in VHDL for the Basys 3 FPGA board. It is capable of playing all 12 notes in different octaves, with up to 3 notest at once. It can also play 2 preprogrammed songs that are loaded into the ROM upon startup. 
+A simple music box written in VHDL for the Basys 3 FPGA board. It is capable of playing all 12 notes in different octaves, with up to 3 notes at once. It can also play 2 preprogrammed songs that are loaded into the ROM upon startup. 
 
 ## Usage:
 For each preprogrammed song, use the Xilinx Vivado IP to generate a single port BRAM with width 8 and depth equal to the number of bytes in the .coe file describing the song (704 for The Office theme, 1120 for Beethoven Virus). Load the .coe files with the song information into the BRAMs. Now it should be ready to load onto a Basys 3 FPGA. 
